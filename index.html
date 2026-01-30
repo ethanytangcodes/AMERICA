@@ -1,92 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="AMERICUM" property="og:title" />
-    <meta content="THE MOST PATRIOTIC PROXY" property="og:description" />
-    <meta
-      content="https://americum.cbass92.org/images/eage3.png"
-      property="og:image"
-    />
-    <script src="/uv/uv.bundle.js"></script>
-    <script src="/uv/uv.config.js"></script>
-    <script src="/baremux/index.js"></script>
-    <script src="/scram/scramjet.worker.js"></script>
-    <script src="/scram/scramjet.shared.js"></script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", async () => {
-          await navigator.serviceWorker.register("/uv/sw.js");
-        });
-      }
-    </script>
-
-    <link rel="stylesheet" href="main.css" />
+    <meta content="THE MOST PATRIOTIC WEBSITE IN THE WORLD" property="og:description" />
+    <meta content="https://americum.cbass92.org/images/eage3.png" property="og:image" />
+    <title>AMERICUM - THE MOST PATRIOTIC WEBSITE</title>
+    <link rel="stylesheet" href="/AMERICA/main.css" />
   </head>
   <body>
     <center class="top">
       <h1 class="cool">
-        <img height="40" src="images/eag2.gif" />
-        <strong>AMERICUM PROXY</strong>
-        <img height="40" src="images/eag2.gif" />
+        <img height="40" src="/AMERICA/images/eag2.gif" alt="Eagle" />
+        <strong>AMERICUM - LAND OF THE FREE</strong>
+        <img height="40" src="/AMERICA/images/eag2.gif" alt="Eagle" />
       </h1>
     </center>
-    <div class="wrapper">
-      <div class="bg left"></div>
-      <div class="bg right"></div>
-    </div>
-    <div id="center"></div>
-    <!-- <iframe id="iframeWindow" class="iframeWindow"></iframe> -->
-    <div class="bottom cool">
-      <img width="auto" height="100" src="images/eage.gif" />
-      <input
-        type="text"
-        id="urlInput"
-        placeholder="SEARCH FOR SOMETHING PATRIOTIC"
-      />
-      <button
-        id="searchButton"
-        class="cool"
-        onclick="document.getElementById('eagleSound').play()"
-      >
-        <strong>SERVE AMERICA</strong>
-      </button>
-      <select id="switcher" class="cool">
-        <option value="epoxy">LIBERTY (WISP)</option>
-        <option value="bare">FREEDOM (BARE)</option>
-      </select>
-      <select id="proxy" class="switcher cool">
-        <option value="scram">CAPITALISM (SCRAMJET)</option>
-        <option value="uv">CORPRATOCRACY (UV)</option>
-      </select>
-      <img width="auto" height="100" src="images/eage.gif" />
-    </div>
-    <audio id="bannerSound" loop src="Star-Spangled-Banner.mp3"></audio>
-    <audio id="eagleSound" src="eagle.mp3"></audio>
-    <div id="overlay">CLICK ANYWHERE TO BEGIN YOUR PATRIOTIC JOURNEY!</div>
-    <div class="eagle"><img src="images/EAGLE.png" /></div>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
-  <script>
-    const fireworks = new Fireworks.default(document.body, {
-      sound: {
-        enabled: true,
-        files: ["explosion1.mp3"],
-        volume: { min: 30, max: 70 },
-      },
-    });
-    fireworks.start();
-    const overlay = document.getElementById("overlay");
-    overlay.addEventListener("click", () => {
-      overlay.style.display = "none";
-      document
-        .getElementById("eagleSound")
-        .play()
-        .then(() => {
-          document.getElementById("bannerSound").play();
-        });
-    });
-  </script>
 
-  <script src="/scram/scramjet.controller.js"></script>
-  <script src="main.js"></script>
+    <div class="content-area">
+      <div class="patriotic-message">
+        <h2 class="message-header">🇺🇸 CELEBRATING AMERICAN FREEDOM 🇺🇸</h2>
+        <div class="freedom-text">
+          <p class="declaration">
+            WE THE PEOPLE of the United States, in Order to form a more perfect Union,
+            establish Justice, insure domestic Tranquility, provide for the common defence,
+            promote the general Welfare, and secure the Blessings of Liberty to ourselves
+            and our Posterity...
+          </p>
+          <div class="values-grid">
+            <div class="value-card">
+              <h3>⭐ LIBERTY</h3>
+              <p>Freedom to pursue happiness and dreams</p>
+            </div>
+            <div class="value-card">
+              <h3>⚡ COURAGE</h3>
+              <p>The bravery that built a nation</p>
+            </div>
+            <div class="value-card">
+              <h3>🦅 JUSTICE</h3>
+              <p>Equal rights for all Americans</p>
+            </div>
+            <div class="value-card">
+              <h3>🗽 UNITY</h3>
+              <p>E Pluribus Unum - Out of Many, One</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom cool">
+      <img width="auto" height="100" src="/AMERICA/images/eage.gif" alt="Eagle" />
+      <button id="freedomButton" class="cool" onclick="celebrateAmerica()">
+        <strong>🇺🇸 CELEBRATE FREEDOM 🇺🇸</strong>
+      </button>
+      <img width="auto" height="100" src="/AMERICA/images/eage.gif" alt="Eagle" />
+    </div>
+
+    <audio id="bannerSound" loop src="/AMERICA/Star-Spangled-Banner.mp3"></audio>
+    <audio id="eagleSound" src="eagle.mp3"></audio>
+    
+    <div id="overlay">
+      <div class="overlay-content">
+        <h1 class="overlay-title">WELCOME TO AMERICA</h1>
+        <p class="overlay-subtitle">CLICK ANYWHERE TO BEGIN YOUR PATRIOTIC JOURNEY!</p>
+      </div>
+    </div>
+
+    <div class="eagle flying-eagle-1"><img src="/AMERICA/images/EAGLE.png" alt="Eagle" /></div>
+    <div class="eagle flying-eagle-2"><img src="/AMERICA/images/EAGLE.png" alt="Eagle" /></div>
+    <div class="eagle flying-eagle-3"><img src="/AMERICA/images/EAGLE.png" alt="Eagle" /></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="/AMERICA/main.js"></script>
+  </body>
 </html>
